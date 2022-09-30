@@ -189,5 +189,182 @@ $lightGreen: #b9e7e7;
         }
       }
     }
+    // Single-📄
+    .single-page {
+      display: flex;
+      gap: 3.125rem;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        img {
+          width: 100%;
+          height: 18.75rem;
+          object-fit: cover;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 0.625rem;
+          font-size: 0.875rem;
+
+          img {
+            width: 3.125rem;
+            height: 3.125rem;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          span {
+            font-weight: bold;
+          }
+        }
+        .edit {
+          display: flex;
+          gap: 0.3125rem;
+
+          img {
+            width: 1.25rem;
+            height: 1.25rem;
+            cursor: pointer;
+          }
+        }
+        h1 {
+          font-size: 2.625rem;
+          color: #333;
+        }
+        p {
+          text-align: justify;
+          line-height: 1.875rem;
+        }
+      }
+
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625rem;
+
+        h1 {
+          font-size: 1.25rem;
+          color: #555;
+        }
+
+        .post {
+          display: flex;
+          flex-direction: column;
+          gap: 1.25rem;
+
+          img {
+            width: 100%;
+            height: 12.5rem;
+            object-fit: cover;
+          }
+          h2 {
+            color: #555;
+          }
+
+          button {
+            width: max-content;
+            cursor: pointer;
+            background-color: #fff;
+            border: 0.0625rem solid teal;
+            color: teal;
+            margin-bottom: 1.125rem;
+
+            &:hover {
+              border: 0.0625rem solid white;
+              background-color: $lightGreen;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+
+    // write;
+
+    .add {
+      margin-top: 1.25rem;
+      display: flex;
+      gap: 1.25rem;
+
+      .content {
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        input {
+          padding: 0.625rem;
+          border: 1px solid lightgray;
+        }
+        .editorContainer {
+          height: 18.75rem;
+          overflow: scroll;
+          border: 1px solid lightgray;
+
+          .editor {
+            height: 100%;
+            border: none;
+          }
+        }
+      }
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        .items {
+          border: 1px solid lightgray;
+          padding: 0.625rem;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 0.75rem;
+          color: #555;
+
+          h1 {
+            font-size: 1.25rem;
+          }
+
+          .file {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+
+          .buttons {
+            display: flex;
+            justify-content: space-between;
+
+            :first-child {
+              cursor: pointer;
+              color: teal;
+              background-color: white;
+              border: 1px solid teal;
+              padding: 0.1875rem 0.3125rem;
+            }
+            :last-child {
+              cursor: pointer;
+              color: white;
+              background-color: teal;
+              border: 1px solid white;
+              padding: 0.1875rem 0.3125rem;
+            }
+          }
+
+          .cat {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            color: teal;
+          }
+        }
+      }
+    }
   }
 }
