@@ -5,7 +5,7 @@ import Logo from "../img/logo.png";
 const Footer = () => {
   return (
     <footer>
-      <img src={Logo} alt='logo' srcset='' />
+      <img src={Logo} alt='logo' srcSet='' />
       <span>
         Made with 🧡 and <b>React.js</b>
       </span>
